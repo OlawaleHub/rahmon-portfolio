@@ -567,7 +567,7 @@ main { flex: 1; }
 .menu-nav { display: flex; flex-direction: column; gap: var(--u4); margin-top: var(--u6); }
 .menu-nav a {
   font-family: var(--font-serif);
-  font-size: var(--t-5);
+  font-size: var(--t-3);
   font-weight: 400;
 }
 
