@@ -227,7 +227,7 @@ main { flex: 1; }
   margin-bottom: var(--u3);
 }
 
-/* ===== Record / marquee ===== */
+/* ===== Record / brand wall ===== */
 .record { margin-top: var(--u8); }
 .record-label {
   font-size: var(--t--1);
@@ -241,30 +241,47 @@ main { flex: 1; }
   margin-top: var(--u2);
   margin-bottom: var(--u4);
 }
-.marquee {
-  overflow: hidden;
+.brand-wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--u);
   border-block: 1px solid var(--rule);
   padding-block: var(--u4);
 }
-.marquee-track {
+.brand-card {
   display: flex;
-  gap: var(--u8);
-  white-space: nowrap;
-  width: max-content;
-  animation: marquee 30s linear infinite;
+  align-items: center;
+  gap: var(--u2);
+  padding: var(--u2) var(--u);
+  border-radius: 4px;
+  transition: background .2s ease;
 }
-.marquee-track span {
-  font-family: var(--font-script);
-  font-size: var(--t-5);
-  color: var(--ink);
-}
-@keyframes marquee { to { transform: translateX(-50%); } }
-.swipe-hint {
-  margin-top: var(--u3);
-  font-size: var(--t--1);
+.brand-card:hover { background: var(--paper-sunk); }
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  border: 1px solid var(--rule-strong);
+  border-radius: 999px;
+  font-family: var(--font-grotesk);
+  font-size: var(--t-0);
+  font-weight: 600;
   letter-spacing: var(--tr-label);
-  text-transform: uppercase;
-  color: var(--ink-muted);
+  color: var(--accent);
+  background: var(--paper);
+  transition: border-color .2s ease, transform .2s ease;
+}
+.brand-card:hover .brand-mark {
+  border-color: var(--accent);
+  transform: scale(1.06);
+}
+.brand-name {
+  font-family: var(--font-serif);
+  font-size: var(--t-1);
+  line-height: var(--lh-snug);
+  color: var(--ink);
 }
 
 /* ===== Case studies ===== */
