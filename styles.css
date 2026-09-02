@@ -176,8 +176,9 @@ main { flex: 1; }
 .hero-portrait img {
   display: block;
   width: clamp(300px, 36vw, 520px);
-  height: clamp(300px, 36vw, 520px);
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: top center;
   border-radius: 4px;
   border: 1px solid var(--rule-strong);
   filter: grayscale(10%);
@@ -568,7 +569,7 @@ main { flex: 1; }
   .hero-text { width: 100%; }
   .hero-title { max-width: 100%; }
   .hero-portrait { width: 100%; }
-  .hero-portrait img { width: 100%; height: auto; aspect-ratio: 4 / 5; }
+  .hero-portrait img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: top center; }
   .testi { grid-template-columns: 1fr; }
   .skills { grid-template-columns: 1fr; gap: var(--u4); }
   .learning { grid-template-columns: 1fr; gap: var(--u4); }
