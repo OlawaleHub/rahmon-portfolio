@@ -284,6 +284,15 @@ main { flex: 1; }
   line-height: var(--lh-snug);
   color: var(--ink);
 }
+.brand-logo {
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  object-fit: contain;
+  border-radius: 999px;
+  transition: transform .2s ease;
+}
+.brand-card:hover .brand-logo { transform: scale(1.06); }
 
 /* ===== Case studies ===== */
 .case-list { border-top: 1px solid var(--rule); }
