@@ -537,16 +537,18 @@ main { flex: 1; }
 /* ===== Mobile menu ===== */
 .menu-open {
   display: none;
-  background: var(--paper);
-  border: 1px solid var(--rule);
-  padding: var(--u) var(--u2);
-  font-family: var(--font-grotesk);
-  font-size: var(--t--1);
-  letter-spacing: var(--tr-label);
-  text-transform: uppercase;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: none;
+  border: none;
   cursor: pointer;
   color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  line-height: 1;
+  padding: 0;
 }
+.menu-open::before { content: "/"; }
 .menu-overlay {
   display: none;
   position: fixed;
