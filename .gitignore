@@ -1,0 +1,7 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# dependencies (none yet, but good practice)
+node_modules/
