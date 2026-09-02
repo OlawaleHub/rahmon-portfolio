@@ -119,6 +119,7 @@ main { flex: 1; }
   white-space: nowrap;
 }
 .nav { display: flex; gap: var(--u4); align-items: baseline; }
+.bar-right { display: flex; align-items: baseline; gap: var(--u4); }
 .nav-item {
   font-family: var(--font-grotesk);
   font-size: var(--t--1);
@@ -403,10 +404,6 @@ main { flex: 1; }
 /* ===== Mobile menu ===== */
 .menu-open {
   display: none;
-  position: fixed;
-  top: var(--u2);
-  right: var(--margin);
-  z-index: 101;
   background: var(--paper);
   border: 1px solid var(--rule);
   padding: var(--u) var(--u2);
