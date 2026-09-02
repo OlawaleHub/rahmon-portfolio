@@ -537,18 +537,17 @@ main { flex: 1; }
 /* ===== Mobile menu ===== */
 .menu-open {
   display: none;
-  width: 1.5rem;
-  height: 1.5rem;
   background: none;
   border: none;
   cursor: pointer;
   color: var(--ink);
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
-  line-height: 1;
+  font-family: var(--font-grotesk);
+  font-size: var(--t--1);
+  font-weight: 500;
+  letter-spacing: var(--tr-label);
+  text-transform: uppercase;
   padding: 0;
 }
-.menu-open::before { content: "/"; }
 .menu-overlay {
   display: none;
   position: fixed;
