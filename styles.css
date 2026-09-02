@@ -285,12 +285,12 @@ main { flex: 1; }
   color: var(--ink);
 }
 .brand-logo {
-  width: 3rem;
   height: 3rem;
+  width: auto;
+  max-width: 7rem;
   flex-shrink: 0;
   object-fit: contain;
-  border-radius: 999px;
-  transition: transform .2s ease;
+  transition: transform .2s ease, filter .2s ease;
 }
 .brand-card:hover .brand-logo { transform: scale(1.06); }
 
